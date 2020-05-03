@@ -7,22 +7,17 @@ import static org.junit.Assert.*;
 
 public class HitTheGrassTest {
 
-
+    double calculateHittingGrass = 2.50;
     HitTheGrass x = new HitTheGrass();
-
-
+    double actual = x.calculateHittingGrass(1.0, 3.0);
 
     @Before
     public void setUp() throws Exception {
-
-        HitTheGrass x = new HitTheGrass();
 
     }
 
     @Test
     public void calculateHittingGrass() {
-        double actual = x.calculateHittingGrass(1.0, 3.0);
-        double expected = 2.50;
-        assertEquals(expected, actual);
+        assertEquals(calculateHittingGrass, actual,0);
     }
 }

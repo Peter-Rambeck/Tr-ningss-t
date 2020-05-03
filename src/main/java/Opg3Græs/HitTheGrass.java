@@ -1,4 +1,5 @@
-package main.java.Opg3Græs;
+package Opg3Græs;
+
 import java.util.Scanner;
 
 public class HitTheGrass {
