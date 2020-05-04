@@ -3,6 +3,7 @@ import Opg2Bog.Bog;
 import Opg3Græs.HitTheGrass;
 import Opg4Square.PrintSquare;
 import Opg5MenuValg.MenuValg;
+import Opg6ProperCase.ProperCase;
 import main.java.Opg2Bog.Bibliotek;
 import java.util.ArrayList;
 
@@ -53,8 +54,15 @@ public class Main {
         */
 
         // Opgave 5
+        /*
         MenuValg menuValg = new MenuValg();
         menuValg.dialogueMenu();
+         */
+
+        // Opgave 6
+        ProperCase properCase = new ProperCase();
+        String str = properCase.changeWord("Det var en mørk aften");
+        System.out.println(str);
 
 
     }
