@@ -1,35 +1,41 @@
 package Opg1ArrayList;
-
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.Collections;
 import java.util.LinkedHashSet;
-import java.util.Set;
 
 public class Opg1ArrayList {
 
     ArrayList<String> arr;
-    Set<String> stringSet;
-    String y;
+    // Set<String> stringSet;
+    String strInput;
 
-    public boolean arrBol(ArrayList arr, String y) {
-        stringSet = new LinkedHashSet<>(arr);
+    public boolean arrBol(ArrayList<String> arr, String strInput) {
+        // ArrayList<String> newArr = new ArrayList<>();
 
-        if (arr.contains(y)) {
-            System.out.println("True");
-            for (String s : stringSet) {
-                System.out.println(s);
+        boolean retVal = false;
+
+        // Catch null case vale
+        if (arr != null && strInput != null) {
+
+            if (arr.contains(strInput)) {
+                retVal = true;
+            } else {
+                arr.add(strInput);
             }
-            return true;
+
+            Collections.sort(arr);
+            System.out.println(arr);
+
+
         } else {
-                arr.add(y);
-            System.out.println("False");
-                for (String s : stringSet) {
-                    System.out.println(s);
-                }
-                return false;
-            }
+            System.out.println("Contains null value");
         }
+        System.out.println(retVal);
+        return retVal;
     }
+}
+
+
 
 
 

@@ -1,10 +1,10 @@
 import Opg1ArrayList.Opg1ArrayList;
+import Opg2Bog.Bibliotek;
 import Opg2Bog.Bog;
 import Opg3Græs.HitTheGrass;
 import Opg4Square.PrintSquare;
 import Opg5MenuValg.MenuValg;
 import Opg6ProperCase.ProperCase;
-import main.java.Opg2Bog.Bibliotek;
 import java.util.ArrayList;
 
 
@@ -15,20 +15,25 @@ public class Main {
     public static void main(String[] args) {
 
         // Opgave 1
-
         /*
+        // Input
         String in = "Et mystiskt tilfælde";
-        ArrayList<String> arr = new ArrayList<>();
-        arr.add("Et");
-        arr.add("mystiskt");
-        arr.add("tilfælde");
-        arr.add("null");
 
-        String y = "null";
+        ArrayList<String> arr = new ArrayList<>();
+
+        // Add String in to ArrayList arr
+        String[] input = in.split(" ");
+        for (String str: input) {
+            arr.add(str);
+        }
+
+        // Given String input variable
+        String strInput = "CPHB";
 
         Opg1ArrayList opg1ArrayList = new Opg1ArrayList();
-        opg1ArrayList.arrBol(arr, y);
-         */
+        // Cal Method.
+        opg1ArrayList.arrBol(arr,strInput);
+        */
 
 
         // Opgave 2
@@ -36,9 +41,10 @@ public class Main {
         Bibliotek bibliotek = new Bibliotek();
         bibliotek.createBog();
         bibliotek.loop();
-        Bog bog1 = new Bog(1234, "Titel1", "www");
+        Bog bog1 = new Bog(1212, "Titel4", "2020");
         bibliotek.sammeISBN(bog1);
         */
+
 
         // Opgave 3
 
@@ -60,11 +66,14 @@ public class Main {
          */
 
         // Opgave 6
+        /*
         ProperCase properCase = new ProperCase();
-        String str = properCase.changeWord("Det var en mørk aften");
+        String str = properCase.changeWord("Det VAR EN mørk aften");
+        String str = properCase.changeWord("");
         System.out.println(str);
+         */
+
 
 
     }
-
 }

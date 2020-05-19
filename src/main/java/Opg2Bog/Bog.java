@@ -1,6 +1,5 @@
 package Opg2Bog;
 
-import java.util.Date;
 import java.util.Objects;
 
 public class Bog {
@@ -16,14 +15,16 @@ public class Bog {
         this.udgivelsesår = udgivelsesår;
     }
 
-    public void equals(int ISBN) {
+    // Equals Method, compare 2 objects
+    public boolean equals(int ISBN) {
+        boolean retVal = false;
         int x = 0;
-        // if (ISBN.equals(x)) {
         if (Objects.equals(ISBN, x)) {
-            System.out.println(ISBN);
+            retVal = true;
         } else {
             System.out.println(x);
         }
+        return retVal;
     }
 
     public int getISBN() {
@@ -42,17 +43,6 @@ public class Bog {
         this.titel = titel;
     }
 
-    /*
-
-    public Date getUdgivelsesår() {
-        return udgivelsesår;
-    }
-
-    public void setUdgivelsesår(Date udgivelsesår) {
-        this.udgivelsesår = udgivelsesår;
-    }
-
-     */
 
     @Override
     public String toString() {
@@ -61,9 +51,5 @@ public class Bog {
                 ", titel='" + titel + '\'' +
                 ", udgivelsesår=" + udgivelsesår;
     }
-
-
-
-
 
 }
